@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<div class="text-bg-secondary p-3 border border-danger-subtle" style=" margin-top:80px; margin-left: 500px; margin-right: 600px;">
+    <form action="" method="post">
+        {% csrf_token %}
+         
+    
+        {{ form.as_p }}
+    
+    
+        <button  type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    {% endblock %}
